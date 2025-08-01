@@ -1,11 +1,14 @@
 package entities;
 
 import utils.ConsolePrinter;
+import utils.GeneralValidator;
 
 public class User {
     public final String nickName;
     private String ip;
     private String skinUrl;
+
+    public final Interface userIntarface = new Interface();
 
     public User( String nickName, String ip, String skinUrl){
         nickNameValidator(nickName);
@@ -16,9 +19,7 @@ public class User {
     };
 
     private void nickNameValidator(String nickName){
-        boolean isCorrect = nickName != null && nickName.length() >= 3 && nickName.length() <= 15;
-
-        if(!isCorrect){
+        if(!GeneralValidator.checkCount(nickName.length(),3,15)){
             ConsolePrinter.errorPrint("Поправ нік");
         };
     };
