@@ -11,7 +11,7 @@ public class Tools {
     private final ToolsEnum type;
     private ToolsMaterialEnum material;
 
-    private Tools(String name, int durability, ToolsEnum type, ToolsMaterialEnum material) {
+    public Tools(String name, int durability, ToolsEnum type, ToolsMaterialEnum material) {
         this.name = name;
         this.durability = durability;
         this.type = type;
