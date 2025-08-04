@@ -1,6 +1,6 @@
 import entities.User;
 import entities.items.Item;
-import entities.items.Tools;
+import entities.items.Tool;
 import enums.InterfaceEnum;
 import enums.ToolsEnum;
 import enums.ToolsMaterialEnum;
@@ -13,7 +13,7 @@ public class Main {
         ScreenSettings.width = 1920;
         ScreenSettings.height = 1080;
 
-        Tools newTool = new Tools("Кайло", 999, ToolsEnum.PICKAXE, ToolsMaterialEnum.DIAMOND);
+        Tool newTool = new Tool("Кайло", 999, ToolsEnum.PICKAXE, ToolsMaterialEnum.DIAMOND);
         User newUser = new User("DrBaget", ":25565","http");
 
         ConsolePrinter.print(newUser.nickName);

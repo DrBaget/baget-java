@@ -1,7 +1,7 @@
 package enums;
 
 public enum ToolsMaterialEnum {
-    TREE,
+    WOOD,
     STONE,
     IRON,
     DIAMOND;

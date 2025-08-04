@@ -5,13 +5,13 @@ import enums.ToolsMaterialEnum;
 import utils.ConsolePrinter;
 import utils.GeneralValidator;
 
-public class Tools {
+public class Tool {
     private String name;
     private int durability;
-    private final ToolsEnum type;
+    public final ToolsEnum type;
     private ToolsMaterialEnum material;
 
-    public Tools(String name, int durability, ToolsEnum type, ToolsMaterialEnum material) {
+    public Tool(String name, int durability, ToolsEnum type, ToolsMaterialEnum material) {
         this.name = name;
         this.durability = durability;
         this.type = type;
@@ -26,12 +26,10 @@ public class Tools {
 
     public String getName() { return this.name; };
     public int getDurability() {return this.durability; };
-    public ToolsEnum getType() {return this.type;};
+//    public ToolsEnum getType() {return this.type;};
     public ToolsMaterialEnum getMaterial() {return this.material;};
 
     public void setMaterial(ToolsMaterialEnum newMaterial) {
-        // <-- Якась валідація для Матеріалу.
-
         this.material = newMaterial;
     }
 
